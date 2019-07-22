@@ -6,4 +6,6 @@
 4. [roman-to-integer](roman-to-integer/roman-to-integer.md)
 5. [longest_common_prefix](longest_common_prefix/longest_common_prefix.md)
 6. [valid-parentheses](valid-parentheses/valid-parentheses.md)
+7. [merge-two-sorted-lists](merge-two-sorted-lists/merge-two-sorted-lists.md)
+8. [remove-duplicates-from-sorted-array](remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.md)
 
