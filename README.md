@@ -10,5 +10,5 @@
 8. [remove-duplicates-from-sorted-array](remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.md)
 9. [remove-element](remove-element/remove-element.md)
 10. [implement-str-indexof](implement-str-indexof/implement-str-indexof.md)
-11. 
+11. [search-insert-position](search-insert-position/search-insert-position.md)
 
