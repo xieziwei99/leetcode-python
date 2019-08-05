@@ -8,4 +8,7 @@
 6. [valid-parentheses](valid-parentheses/valid-parentheses.md)
 7. [merge-two-sorted-lists](merge-two-sorted-lists/merge-two-sorted-lists.md)
 8. [remove-duplicates-from-sorted-array](remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.md)
+9. [remove-element](remove-element/remove-element.md)
+10. [implement-str-indexof](implement-str-indexof/implement-str-indexof.md)
+11. 
 
