@@ -11,4 +11,5 @@
 9. [remove-element](remove-element/remove-element.md)
 10. [implement-str-indexof](implement-str-indexof/implement-str-indexof.md)
 11. [search-insert-position](search-insert-position/search-insert-position.md)
+12. [count-and-say](count-and-say/count-and-say.md)
 
