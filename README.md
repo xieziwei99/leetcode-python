@@ -17,4 +17,5 @@
 15. [plus-one](plus-one/plus-one.md)
 16. [add-binary](./add-binary/add-binary.md)：求两个二进制字符串的和
 17. [vowel-spellchecker](./vowel-spellchecker/vowel-spellchecker.md)：单词查询-拼写检查-可替换元音字母
+18. [find-K-closest-elements](./find-K-closest-elements/find-K-closest-elements.md)：从给定数组中找到 k 个和已知数 x 最接近的数
 
