@@ -49,3 +49,69 @@ public class Solution {
 }
 ```
 
+
+
+### using c++
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <algorithm> 
+
+#define EQ(a, b, x) (a == b) 
+#define LT(a, b, x) (abs(a - x) < abs(b - x) || (abs(a - x) == abs(b - x) && a < b)) 
+#define LQ(a, b, x) (LT(a, b, x) || EQ(a, b, x))
+
+using namespace std;
+
+// 快速排序		平均：O(nlogn)		需设一个栈来实现递归	不稳定
+int partition(vector<int>& arr, int low, int high, int x) {		// 进行一趟排序
+	int temp = 0;
+	temp = arr[low];
+	int pivotkey = arr[low];	// 或者 (low + high) / 2，或其他
+	while (low < high) {
+		while (low < high && LQ(pivotkey, arr[high], x)) {
+			high--;
+		}
+		arr[low] = arr[high];
+		while (low < high && LQ(arr[low], pivotkey, x)) {
+			low++;
+		}
+		arr[high] = arr[low];
+	}
+	arr[low] = temp;
+	return low;
+}
+void quickSort(vector<int>& arr, int low, int high, int x) {
+	if (low < high) {		// 长度>1
+		int pivotPos = partition(arr, low, high, x);
+		quickSort(arr, low, pivotPos - 1, x);
+		quickSort(arr, pivotPos + 1, high, x);
+	}
+}
+void quickSort(vector<int>& arr, int x) {
+	quickSort(arr, 0, arr.size() - 1, x);
+}
+
+class Solution {
+public:
+	vector<int> findClosestElements(vector<int>& arr, int k, int x) {
+		quickSort(arr, x);
+		vector<int>::iterator itr = arr.begin();
+		arr.erase(itr + k, arr.end());
+		sort(arr.begin(), arr.end());
+		return arr;
+	}
+};
+
+int main() {
+	vector<int> arr = { 1, 3, 5, 7, 9};
+	int k = 4, x = 4;
+	arr = Solution().findClosestElements(arr, k, x);
+	for (int i = 0; i < arr.size(); i++) {
+		cout << arr[i] << " ";
+	}
+	return 0;
+}
+```
